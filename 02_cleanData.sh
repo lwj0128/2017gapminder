@@ -3,7 +3,7 @@
 #####################################################################
 # This file performs cleaning operations on country files with errors
 #####################################################################
-cd data/02_cleaning/cleaning
+cd data/clean
 
 # Fix Guinea file - we just want the middle 12 rows
 echo "Fixing Guinea.cc.txt file"
@@ -20,6 +20,6 @@ echo "Fixing Niger.cc.txt file"
 head -n 12 Niger.cc.txt > Niger.cc.txt.clean
 mv -v Niger.cc.txt.clean Niger.cc.txt
 
-cd ../../..
+cd ../..
 
 sleep 1
